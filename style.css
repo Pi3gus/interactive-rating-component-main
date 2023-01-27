@@ -26,31 +26,50 @@ body{
     place-items: center;
     height: 100vh;
 }
-.ratingCard{
+.ratingCard,
+.thanksCard{
     border-radius: 1.6rem;
     background-color: rgba(18, 20, 23, 1);
     background-image: linear-gradient(45deg, hsl(216, 12%, 8%) 0%, hsl(213, 20%, 18%) 110%);
     padding: 2rem;
     width: 25rem;
 }
-img{
+.ratingCard img{
     padding: 0.9rem;
     border-radius: 50%;
     background-color: var(--Dark_Blue);
+}
+
+.thanksCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 h1{
     font-weight: 400;
     margin-top: 1.3rem;
 }
 
-main p{
+p{
     margin-top: 1rem;
     font-size: 15px;
     font-weight: 400;
     color: var(--Light_Grey);
     line-height: 1.6rem;
 }
-
+.thanksCard p:first-of-type {
+    color: var(--Orange);
+    background-color: var(--Dark_Blue);
+    padding: 0.2rem 2rem;
+    border-radius: 2rem;
+}
+.thanksCard p:last-of-type{
+    text-align: center;
+}
+.thanksCard{
+    display: none;
+}
 .buttons{
     margin-top: 1.3rem;
     display: flex;
@@ -64,7 +83,17 @@ main p{
     background-color: var(--Dark_Blue);
     color: var(--Light_Grey);
     font-weight: 700;
+    transition: 300ms;
 }
+.btn:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.btn:focus{
+    background-color: var(--Medium_Grey);
+    color: var(--White);
+}
+
 .submit{
     margin-top: 1.4rem;
     background-color: var(--Orange);
@@ -77,4 +106,9 @@ main p{
     letter-spacing: 0.2rem;
     font-weight: 400;
     font-size: 15px;
+    transition: 300ms;
+}
+.submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
 }
