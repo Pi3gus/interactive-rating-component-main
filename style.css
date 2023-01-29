@@ -67,7 +67,7 @@ p{
 .thanksCard p:last-of-type{
     text-align: center;
 }
-.thanksCard{
+.hidden{
     display: none;
 }
 .buttons{
