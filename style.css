@@ -12,7 +12,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
 
     background-color: var(--Very_Dark_Blue);
@@ -20,7 +19,6 @@ body{
     font-family: 'Overpass', sans-serif;
     margin: 0 auto;
 }
-
 .container{
     display: grid;
     place-items: center;
@@ -39,7 +37,6 @@ body{
     border-radius: 50%;
     background-color: var(--Dark_Blue);
 }
-
 .thanksCard{
     display: flex;
     flex-direction: column;
@@ -50,7 +47,6 @@ h1{
     font-weight: 400;
     margin-top: 1.3rem;
 }
-
 p{
     margin-top: 1rem;
     font-size: 15px;
@@ -93,7 +89,6 @@ p{
     background-color: var(--Medium_Grey);
     color: var(--White);
 }
-
 .submit{
     margin-top: 1.4rem;
     background-color: var(--Orange);
